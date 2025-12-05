@@ -46,7 +46,7 @@
                         </button>
                     </div>
 
-                    <div class="show-more-container" *ngIf="(p.maquettes?.length ?? 0) > 4">
+                    <div class="show-more-container" *ngIf="(p.maquettes?.length ?? 0) > 3">
                         <button class="show-more-btn mt-2 px-4 py-2 bg-transparent cursor-pointer border-0 fst-italic fs-6 fw-semibold"
                             (click)="toggleShowAllImages()" [attr.aria-label]="showMoreAria">
                             <span class="plus-icon" aria-hidden="true">{{ showAllImages ? '−' : '+' }}</span>
