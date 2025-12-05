@@ -1,6 +1,7 @@
-@use "bootstrap/scss/bootstrap";
 @import "@fortawesome/fontawesome-free/css/all.min.css";
+@import "bootstrap/scss/bootstrap";
 
+/* Shared baseline: title underline */
 .title-underline {
     width: 80px;
     height: 4px;
@@ -13,6 +14,7 @@
     animation: expandLine 0.3s ease forwards;
 }
 
+/* Utilities used across templates */
 .object-fit-cover {
     object-fit: cover;
 }
@@ -33,6 +35,7 @@
     overflow-y: scroll;
 }
 
+/* Global: h1 uniform styling across the app */
 h1 {
     color: #4a5d23;
     font-size: clamp(2rem, 4vw, 2.5rem);
