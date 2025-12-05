@@ -56,7 +56,7 @@ export class ProjetsComponent implements OnInit, OnDestroy {
   // Liste des maquettes affichées (saniée + éventuellement tronquée à 4)
   visibleMaquettes(p: Project | null): string[] {
     const list = (p?.maquettes ?? []).map(m => this.resolveMaquettePath(m));
-    return this.showAllImages ? list : list.slice(0, Math.min(4, list.length));
+    return this.showAllImages ? list : list.slice(0, Math.min(3, list.length));
   }
 
   // Ouvrir/fermer le carrousel
